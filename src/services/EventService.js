@@ -1,7 +1,9 @@
 import axios from 'axios'
 
+import { ApiBaseUrl } from '../config.json'
+
 const apiClient = axios.create({
-  baseURL: 'https://my-json-server.typicode.com/palegret/vuemastery-real-world-vue-3-api',
+  baseURL: ApiBaseUrl,
   withCredentials: false,
   headers: {
     Accept: 'application/json',
